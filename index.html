@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="description" content="Gokul S | Data Analyst Portfolio – SQL, Python, Excel, Power BI" />
+  <meta name="keywords" content="Gokul S, Data Analyst, SQL, Python, Excel, Power BI, Machine Learning, Chennai" />
+  <meta name="author" content="Gokul S" />
+  <meta property="og:title" content="Gokul S | Data Analyst" />
+  <meta property="og:description" content="Data Analyst skilled in SQL, Python, Advanced Excel and Power BI. MCA graduate based in Chennai." />
+  <title>Gokul S | Data Analyst</title>
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Portfolio Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── CURSOR ── -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ── NAVBAR ── -->
+<nav>
+  <div class="nav-logo">GS<span>.data</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── MOBILE MENU ── -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home"      onclick="closeMobile()">Home</a></li>
+    <li><a href="#about"     onclick="closeMobile()">About</a></li>
+    <li><a href="#skills"    onclick="closeMobile()">Skills</a></li>
+    <li><a href="#education" onclick="closeMobile()">Education</a></li>
+    <li><a href="#projects"  onclick="closeMobile()">Projects</a></li>
+    <li><a href="#contact"   onclick="closeMobile()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-blob2"></div>
+
+  <div class="hero-content" data-aos="fade-up">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Open to Data Analyst roles
+    </div>
+    <p class="hero-greeting"></p>
+    <h1 class="hero-name">
+      <span class="first">Gokul </span><span class="last">S</span>
+    </h1>
+    <p class="hero-role">Data Analyst <span>// SQL, Python &amp; Power BI</span></p>
+    <p class="hero-desc">
+      Turning raw data into clear insights with statistical analysis, dashboards and business intelligence.
+      Hands-on with SQL, Python, Advanced Excel and Power BI.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        View Projects
+      </a>
+      <a href="mailto:gokulsrinivasan328@gmail.com" class="btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        Let's Talk
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">MCA</div>
+        <div class="stat-label">// class of 2025</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2</div>
+        <div class="stat-label">// projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4</div>
+        <div class="stat-label">// core tools</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Code cards (desktop only) -->
+  <div class="hero-right" data-aos="fade-left" data-aos-delay="300">
+    <div class="code-card">
+      <div class="code-card-title">📊 analyst.py</div>
+      <span class="c-white">analyst</span> <span class="c-gray">= {</span><br/>
+      &nbsp;&nbsp;<span class="c-green">"name"</span><span class="c-gray">: </span><span class="c-green">"Gokul S"</span><span class="c-gray">,</span><br/>
+      &nbsp;&nbsp;<span class="c-green">"role"</span><span class="c-gray">: </span><span class="c-green">"Data Analyst"</span><span class="c-gray">,</span><br/>
+      &nbsp;&nbsp;<span class="c-green">"city"</span><span class="c-gray">: </span><span class="c-green">"Chennai"</span><span class="c-gray">,</span><br/>
+      &nbsp;&nbsp;<span class="c-green">"open_to_work"</span><span class="c-gray">: </span><span class="c-purple">True</span><br/>
+      <span class="c-gray">}</span>
+    </div>
+    <div class="code-card">
+      <div class="code-card-title">⚡ stack.py</div>
+      <span class="c-white">stack</span> <span class="c-gray">= [</span><br/>
+      &nbsp;&nbsp;<span class="c-green">"SQL"</span><span class="c-gray">,</span><br/>
+      &nbsp;&nbsp;<span class="c-green">"Python"</span><span class="c-gray">,</span><br/>
+      &nbsp;&nbsp;<span class="c-green">"Excel"</span><span class="c-gray">,</span><br/>
+      &nbsp;&nbsp;<span class="c-green">"Power BI"</span><br/>
+      <span class="c-gray">]</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about">
+  <div data-aos="fade-up">
+    <p class="section-label">// 01. about_me</p>
+    <h2 class="section-title">Who Am <span>I?</span></h2>
+    <p class="section-subtitle">A little background about me and what drives my interest in data.</p>
+  </div>
+
+  <div class="about-grid">
+    <!-- Add your photo: replace this block with
+         <img src="src/gokul.jpeg" alt="Gokul S" class="about-photo" /> -->
+    <div class="about-photo-wrap" data-aos="fade-right">
+      <div class="about-avatar">
+        <div class="initials">GS</div>
+        <p>// data_analyst</p>
+      </div>
+      <div class="about-badge">
+        <div class="about-badge-num">MCA</div>
+        <div class="about-badge-text">Graduate, 2025</div>
+      </div>
+    </div>
+
+    <div class="about-text" data-aos="fade-left">
+      <p>I'm <span>Gokul S</span>, a detail-oriented <span>Data Analyst</span> based in Chennai with a strong foundation in statistical analysis, data visualization and business intelligence. I received hands-on training at <span>Besant Technology, Velachery</span>.</p>
+      <p>I'm proficient in <span>SQL, Python, Excel and Power BI</span>, with strong expertise in Advanced Excel functions such as VLOOKUP, HLOOKUP, PivotTables and data validation.</p>
+      <p>I've designed and optimized spreadsheets for <span>HR analytics</span> and <span>Blinkit dashboard analysis</span>, and built automated solutions with Excel formulas and integrated datasets to support reporting and data-driven decisions.</p>
+
+      <div class="about-details">
+        <div class="detail-item">
+          <div class="detail-icon">📍</div>
+          <div class="detail-info"><label>location</label><p>Chennai</p></div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon">🎓</div>
+          <div class="detail-info"><label>degree</label><p>MCA – Thiruvalluvar University</p></div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon">💼</div>
+          <div class="detail-info"><label>status</label><p>Open to Work</p></div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon">📧</div>
+          <div class="detail-info"><label>email</label><p>gokulsrinivasan328@gmail.com</p></div>
+        </div>
+      </div>
+
+      <div style="margin-top:28px;">
+        <a href="src/pdf/GokulS.pdf" target="_blank" class="btn-primary" style="width:fit-content;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section id="skills">
+  <div data-aos="fade-up">
+    <p class="section-label">// 02. tech_stack</p>
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <p class="section-subtitle">Tools and technologies I use to analyze data and build reports.</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-category" data-aos="fade-up">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon" style="background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.2);">🐍</div>
+        <div>
+          <div class="skill-cat-title">Python &amp; ML</div>
+          <div class="skill-cat-sub">// programming</div>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">AI</span>
+        <span class="skill-tag">ML</span>
+        <span class="skill-tag">NLP</span>
+        <span class="skill-tag">DL</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Seaborn</span>
+        <span class="skill-tag">SciPy</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">OpenCV</span>
+      </div>
+    </div>
+
+    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);">🗄</div>
+        <div>
+          <div class="skill-cat-title">MySQL</div>
+          <div class="skill-cat-sub">// databases</div>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag green">DDL</span>
+        <span class="skill-tag green">DML</span>
+        <span class="skill-tag green">Joins</span>
+        <span class="skill-tag green">Functions</span>
+        <span class="skill-tag green">Subqueries</span>
+        <span class="skill-tag green">Normalization</span>
+        <span class="skill-tag green">Triggers</span>
+      </div>
+    </div>
+
+    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon" style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.2);">📗</div>
+        <div>
+          <div class="skill-cat-title">MS Excel</div>
+          <div class="skill-cat-sub">// spreadsheets</div>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag cyan">VLOOKUP</span>
+        <span class="skill-tag cyan">HLOOKUP</span>
+        <span class="skill-tag cyan">Formulas &amp; Functions</span>
+        <span class="skill-tag cyan">Pivot Tables</span>
+        <span class="skill-tag cyan">Power Query</span>
+        <span class="skill-tag cyan">Slicers</span>
+        <span class="skill-tag cyan">Timelines</span>
+        <span class="skill-tag cyan">Data Validation</span>
+      </div>
+    </div>
+
+    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-cat-header">
+        <div class="skill-cat-icon" style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);">📈</div>
+        <div>
+          <div class="skill-cat-title">MS Power BI</div>
+          <div class="skill-cat-sub">// business intelligence</div>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">DAX</span>
+        <span class="skill-tag">Data Transformation</span>
+        <span class="skill-tag">Power Query Editor</span>
+        <span class="skill-tag">Data Modeling</span>
+        <span class="skill-tag">Interactive Dashboards</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════════ -->
+<section id="education">
+  <div data-aos="fade-up">
+    <p class="section-label">// 03. education</p>
+    <h2 class="section-title">My <span>Journey</span></h2>
+    <p class="section-subtitle">My academic background and training.</p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item" data-aos="fade-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Master of Computer Application (MCA)</div>
+            <div class="timeline-company">🎓 Thiruvalluvar University</div>
+          </div>
+          <div class="timeline-date">Aug 2023 – May 2025</div>
+        </div>
+        <ul class="timeline-bullets">
+          <li>CGPA: 7.2</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Bachelor of Computer Application (BCA)</div>
+            <div class="timeline-company">🎓 Thiruvalluvar University</div>
+          </div>
+          <div class="timeline-date">Jul 2020 – May 2023</div>
+        </div>
+        <ul class="timeline-bullets">
+          <li>CGPA: 7.5</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Data Analytics Training</div>
+            <div class="timeline-company">🏢 Besant Technology, Velachery</div>
+          </div>
+          <div class="timeline-date">Hands-on training</div>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Practical training in SQL, Python, Advanced Excel and Power BI.</li>
+        </ul>
+        <div class="timeline-tech">
+          <span>SQL</span><span>Python</span><span>Excel</span><span>Power BI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════════ -->
+<section id="projects">
+  <div data-aos="fade-up">
+    <p class="section-label">// 04. my_projects</p>
+    <h2 class="section-title">What I've <span>Built</span></h2>
+    <p class="section-subtitle">Data projects covering business intelligence and machine learning.</p>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card" data-aos="fade-up">
+      <div class="project-card-top">
+        <div class="project-icon" style="background:rgba(124,58,237,0.1);border-color:rgba(124,58,237,0.2);">👥</div>
+        <div class="project-links">
+          <a href="https://github.com/Gokul-srinivasan328" target="_blank" class="project-link" title="GitHub">
+            <svg width="14" height="14" viewBox="0 0 496 512" fill="currentColor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-title">Employee Attrition Dashboard</div>
+      <div class="project-subtitle">HR Analytics · Power BI</div>
+      <p class="project-desc">Visualizes and analyzes employee attrition trends so the HR team can spot patterns in employee exits and take preventive action. Uses advanced Power BI formulas to automate KPI calculations.</p>
+      <div class="project-tech">
+        <span>Power BI</span><span>Tables</span><span>Slicers</span>
+        <span>Charts</span><span>Conditional Formatting</span>
+      </div>
+    </div>
+
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="project-card-top">
+        <div class="project-icon" style="background:rgba(16,185,129,0.1);border-color:rgba(16,185,129,0.2);">🧠</div>
+        <div class="project-links">
+          <a href="https://github.com/Gokul-srinivasan328" target="_blank" class="project-link" title="GitHub">
+            <svg width="14" height="14" viewBox="0 0 496 512" fill="currentColor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="project-title">Brain Tumor Prediction</div>
+      <div class="project-subtitle">Machine Learning · Medical Imaging</div>
+      <p class="project-desc">Predictive model for early detection of brain tumors from MRI scan data. Applies machine learning algorithms to automate tumor classification, evaluated with accuracy, precision, recall and F1-score.</p>
+      <div class="project-tech">
+        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+        <span>Matplotlib</span><span>Seaborn</span><span>OpenCV</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact">
+  <div data-aos="fade-up">
+    <p class="section-label">// 05. get_in_touch</p>
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+    <p class="section-subtitle">Open to Data Analyst opportunities. Feel free to reach out!</p>
+  </div>
+
+  <div class="contact-wrapper">
+    <div data-aos="fade-right">
+      <h3 class="contact-info-title">Say Hello 👋</h3>
+      <p class="contact-info-desc">I'm currently open to new Data Analyst roles. Whether you have a job opportunity, a project, or just want to connect — my inbox is open!</p>
+      <div class="contact-links">
+        <a href="mailto:gokulsrinivasan328@gmail.com" class="contact-link-item">
+          <div class="contact-link-icon">📧</div>
+          <div>
+            <div class="contact-link-label">// email</div>
+            <div class="contact-link-value">gokulsrinivasan328@gmail.com</div>
+          </div>
+        </a>
+        <a href="tel:+919360073475" class="contact-link-item">
+          <div class="contact-link-icon">📱</div>
+          <div>
+            <div class="contact-link-label">// phone</div>
+            <div class="contact-link-value">+91 9360073475</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/gokul-srinivasan-b05b44266" target="_blank" class="contact-link-item">
+          <div class="contact-link-icon">💼</div>
+          <div>
+            <div class="contact-link-label">// linkedin</div>
+            <div class="contact-link-value">linkedin.com/in/gokul-srinivasan-b05b44266</div>
+          </div>
+        </a>
+        <a href="https://github.com/Gokul-srinivasan328" target="_blank" class="contact-link-item">
+          <div class="contact-link-icon">🐙</div>
+          <div>
+            <div class="contact-link-label">// github</div>
+            <div class="contact-link-value">github.com/Gokul-srinivasan328</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div data-aos="fade-left">
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>// your_name</label>
+            <input type="text" id="contactName" placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label>// your_email</label>
+            <input type="email" id="contactEmail" placeholder="john@company.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>// subject</label>
+          <input type="text" id="contactSubject" placeholder="Data Analyst Opportunity" />
+        </div>
+        <div class="form-group">
+          <label>// message</label>
+          <textarea id="contactMessage" placeholder="Hi Gokul, I'd like to discuss..."></textarea>
+        </div>
+        <button class="btn-primary" id="sendBtn" style="justify-content:center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+          Send Message
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-left">
+    Design &amp; Built by <span>Gokul S</span> &copy; 2026
+  </div>
+  <div class="footer-social">
+    <a href="https://github.com/Gokul-srinivasan328" target="_blank" title="GitHub">
+      <svg width="16" height="16" viewBox="0 0 496 512" fill="currentColor"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/gokul-srinivasan-b05b44266" target="_blank" title="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 448 512" fill="currentColor"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+    </a>
+    <a href="mailto:gokulsrinivasan328@gmail.com" title="Email">
+      <svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+    </a>
+  </div>
+  <button class="back-top" onclick="backToTop()">↑ Back to Top</button>
+</footer>
+
+<!-- ── SCRIPTS ── -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
